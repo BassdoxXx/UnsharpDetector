@@ -22,7 +22,7 @@ class UnsharpTrainingDataGenerator(Sequence):
         self.noise_rate = noise_rate
         self.min_blur = min_blur
         self.min_shake = min_shake
-        filename_regex = re.compile(r".*\.(jpg|JPG|jpeg|JPEG|png|PNG|bmp|BMP)$")
+        filename_regex = re.compile(r".*\.(jpg|JPG|jpeg|JPEG|png|PNG|bmp|BMP|ARW)$")
         self.image_filenames = []
         for folder in image_folders:
             filenames = listdir(path.abspath(folder))
